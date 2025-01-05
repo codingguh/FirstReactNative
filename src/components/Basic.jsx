@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
 
  function Basic() {
-    const [count,setCount]= useState(0)
+    const [count,setCount]= useState(10)
   return (
     <View>
       <View style={styles.boxContainer}>
