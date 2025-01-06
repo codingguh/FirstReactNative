@@ -24,11 +24,11 @@ const SplashScreen = ({navigation}) => {
       {show && (
         <Animated.View style={[styles.splash, {opacity: fadeAnim}]}>
           <View style={styles.leftSide}>
-            <Image source={require('./assets/leftside_splashscreen.png')} />
+            <Image source={require('../../assets/leftside_splashscreen.png')} />
           </View>
           <View style={styles.imageContainer}>
             <Image
-              source={require('./assets/logo.png')} // Replace with your logo path
+              source={require('../../assets/myaccess.png')} // Replace with your logo path
               style={styles.logo}
             />
           </View>
@@ -59,7 +59,10 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 0,
     top:0,
-    height:'100%'
+    height:'100%',
+    width:200,
+    marginTop:-420,
+    marginLeft:-80
   },
   imageContainer: {
     justifyContent: 'center',
